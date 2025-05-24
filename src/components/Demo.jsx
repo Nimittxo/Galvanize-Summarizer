@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 
-const API_URL = "http://localhost:8000/summarize";
-
+const API_URL = "/api/summarize";
 const Demo = () => {
   const [inputType, setInputType] = useState("url"); // "url" or "text"
   const [inputValue, setInputValue] = useState("");
