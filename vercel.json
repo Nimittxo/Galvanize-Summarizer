@@ -5,6 +5,11 @@
       "use": "@vercel/python"
     }
   ],
+  "functions": {
+    "api/**/*.py": {
+      "excludeFiles": ["src/**", "dist/**", "node_modules/**", ".git/**"]
+    }
+  },
   "routes": [
     {
       "src": "/api/(.*)",
